@@ -1,0 +1,135 @@
+* {
+  min-height: 0;
+  min-width: 0;
+  font-family: Lexend, "JetBrainsMono NFP";
+  font-size: 12px;
+  font-weight: 600;
+}
+
+/* Gruvbox Dark Colors */
+/*
+#282828 - bg0 (dark background)
+#3c3836 - bg1
+#504945 - bg2
+#665c54 - bg3
+#7c6f64 - bg4
+
+#ebdbb2 - fg (foreground)
+#d5c4a1 - fg1
+#bdae93 - fg2
+#a89984 - fg3
+
+#fb4934 - red
+#fe8019 - orange
+#fabd2f - yellow
+#b8bb26 - green
+#83a598 - aqua
+#8ec07c - green-2 (used in original gruvbox for some elements)
+#d3869b - purple
+#d79921 - orange-2 (used in original gruvbox for some elements)
+#458588 - blue
+*/
+
+window#waybar {
+  transition-property: background-color;
+  transition-duration: 0.5s;
+  background-color: #282828; /* bg0 */
+}
+
+#workspaces button {
+  padding: 0.3rem 0.6rem;
+  margin: 0.4rem 0.25rem;
+  border-radius: 6px;
+  background-color: #3c3836; /* bg1 */
+  color: #ebdbb2; /* fg */
+}
+
+#workspaces button:hover {
+  color: #282828; /* bg0 */
+  background-color: #ebdbb2; /* fg */
+}
+
+#workspaces button.active {
+  background-color: #504945; /* bg2 */
+  color: #83a598; /* aqua */
+}
+
+#workspaces button.urgent {
+  background-color: #504945; /* bg2 */
+  color: #fb4934; /* red */
+}
+
+#clock,
+#pulseaudio,
+#custom-logo,
+#custom-power,
+#custom-spotify,
+#custom-notification,
+#cpu,
+#tray,
+#memory,
+#window,
+#mpris {
+  padding: 0.3rem 0.6rem;
+  margin: 0.4rem 0.25rem;
+  border-radius: 6px;
+  background-color: #3c3836; /* bg1 */
+}
+
+#mpris.playing {
+  color: #b8bb26; /* green */
+}
+
+#mpris.paused {
+  color: #a89984; /* fg3 */
+}
+
+#custom-sep {
+  padding: 0px;
+  color: #665c54; /* bg3 */
+}
+
+window#waybar.empty #window {
+  background-color: transparent;
+}
+
+#cpu {
+  color: #8ec07c; /* green-2 */
+}
+
+#memory {
+  color: #d3869b; /* purple */
+}
+
+#clock {
+  color: #fabd2f; /* yellow */
+}
+
+#clock.simpleclock {
+  color: #83a598; /* aqua */
+}
+
+#window {
+  color: #ebdbb2; /* fg */
+}
+
+#pulseaudio {
+  color: #83a598; /* aqua */
+}
+
+#pulseaudio.muted {
+  color: #a89984; /* fg3 */
+}
+
+#custom-logo {
+  color: #458588; /* blue */
+}
+
+#custom-power {
+  color: #fb4934; /* red */
+}
+
+tooltip {
+  background-color: #3c3836; /* bg1 */
+  border: 2px solid #83a598; /* aqua */
+}
