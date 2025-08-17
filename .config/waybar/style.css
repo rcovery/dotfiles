@@ -37,7 +37,7 @@ window#waybar {
 }
 
 #workspaces button {
-  padding: 0.3rem 0.6rem;
+  padding: 0.2rem 0.6rem;
   margin: 0.4rem 0.25rem;
   border-radius: 6px;
   background-color: #3c3836; /* bg1 */
@@ -70,9 +70,9 @@ window#waybar {
 #memory,
 #window,
 #mpris {
-  padding: 0.3rem 0.6rem;
-  margin: 0.4rem 0.25rem;
-  border-radius: 6px;
+  padding: 0.2rem 0.6rem;
+  margin: 0.25rem 0.2rem;
+  border-radius: 2px;
   background-color: #3c3836; /* bg1 */
 }
 
