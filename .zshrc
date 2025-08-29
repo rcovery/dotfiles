@@ -19,3 +19,13 @@ export NVM_DIR="$HOME/.nvm"
 
 [ -z "$SSH_AUTH_SOCK" ] && eval "$(ssh-agent -s)"
 
+
+. "$HOME/.atuin/bin/env"
+eval "$(atuin init zsh)"
+
+export ATUIN_NOBIND=true
+bindkey "^R" atuin-search
+
+# incremental history search with arrow keys
+bindkey "^[[A" history-beginning-search-backward
+bindkey "^[[B" history-beginning-search-forward]]
