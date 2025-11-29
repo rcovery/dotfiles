@@ -1,6 +1,3 @@
-# Tech Gothic Starship Prompt for Zsh
-# Add this to your .zshrc: source /path/to/tech-gothic-prompt.zsh
-
 # Enable command timing
 preexec() {
     cmd_start_time=$SECONDS
@@ -39,6 +36,17 @@ local reset='%f'
 
 # Function to get git branch
 git_branch() {
+    local branch
+    if git rev-parse --git-dir >/dev/null 2>&1; then
+        branch=$(git symbolic-ref --short HEAD 2>/dev/null || git rev-parse --short HEAD 2>/dev/null)
+        if [[ -n $branch ]]; then
+            echo "[${branch}]"
+        fi
+    fi
+}
+
+# Function to get mise version
+git_branch2() {
     local branch
     if git rev-parse --git-dir >/dev/null 2>&1; then
         branch=$(git symbolic-ref --short HEAD 2>/dev/null || git rev-parse --short HEAD 2>/dev/null)

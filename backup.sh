@@ -1,11 +1,15 @@
 #!/bin/bash
 
 echo "[-] Backing up ZSHRC"
-cp ~/.zshrc ~/.rcovery-prompt.zsh .
+cp ~/.zshrc .
+cp -r ~/.config/zsh/prompt.zsh .config/zsh/prompt.zsh
 
 echo "[-] Backing up Hyprland"
 cp ~/.config/hypr/* .config/hypr/
 
-echo "[-] Backing up Waybar"
-cp ~/.config/waybar/* .config/waybar
+# echo "[-] Backing up Waybar"
+# cp ~/.config/waybar/* .config/waybar
+
+echo "[-] Backing up FISH"
+cp -r ~/.config/fish/* .config/fish
 
