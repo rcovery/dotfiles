@@ -1,0 +1,25 @@
+binds {
+  Mod+V { spawn-sh "walker --width 600 --height 400 -m clipboard"; }
+  Mod+Space { spawn-sh "walker --width 600 --height 400"; }
+
+  Mod+Return { spawn "ghostty"; }
+  Mod+E { spawn-sh "nautilus --new-window"; }
+  Mod+B { spawn "brave"; }
+  Mod+O { spawn-sh "obsidian -disable-gpu --enable-wayland-ime"; }
+  Mod+A { spawn-sh "brave --app=https://chatgpt.com"; }
+  Mod+Shift+A { spawn-sh "brave --app=https://gemini.google.com"; }
+  Mod+Y { spawn-sh "brave --app=https://youtube.com"; }
+  Mod+M { spawn-sh "brave --app=https://music.youtube.com"; }
+  Mod+G { spawn-sh "brave --app=https://web.whatsapp.com"; }
+  Mod+Alt+G { spawn-sh "brave --app=https://messages.google.com/web/conversations"; }
+
+  Mod+T { spawn-sh "ghostty -e dgop"; }
+  Mod+D { spawn-sh "ghostty -e lazydocker"; }
+
+  Ctrl+Super+L { spawn-sh "dms ipc call lock lock"; }
+  Ctrl+Super+Space { spawn-sh "dms ipc call wallpaper next; dms ipc call theme dark"; }
+
+  Print { screenshot; }
+  Ctrl+Print { screenshot-screen; }
+  Alt+Print { screenshot-window; }
+}

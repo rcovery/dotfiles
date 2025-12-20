@@ -1,0 +1,15 @@
+
+// Include dms files
+include "dms/colors.kdl"
+include "dms/layout.kdl"
+// include "dms/alttab.kdl"
+// include "dms/binds.kdl"
+
+include "rcovery/settings.kdl"
+include "rcovery/app-bindings.kdl"
+include "rcovery/default-bindings.kdl"
+include "rcovery/input.kdl"
+include "rcovery/layout.kdl"
+include "rcovery/animations.kdl"
+include "rcovery/monitors.kdl"
+include "rcovery/workspaces.kdl"

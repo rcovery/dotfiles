@@ -70,6 +70,7 @@ alias ff="fzf --preview 'bat --style=numbers --color=always {}'"
 alias cd="z"
 alias cat="bat"
 alias n="nvim ."
+alias k="nvim ."
 
 #export ATUIN_NOBIND=true
 #bindkey "^R" atuin-search

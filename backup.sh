@@ -13,3 +13,5 @@ cp ~/.config/hypr/* .config/hypr/
 echo "[-] Backing up FISH"
 cp -r ~/.config/fish/* .config/fish
 
+echo "[-] Backing up NiriWM"
+cp -r ~/.config/niri/* .config/niri

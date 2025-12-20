@@ -1,0 +1,9 @@
+include "rcovery/layout-rules.kdl"
+include "rcovery/input.kdl"
+include "rcovery/monitors.kdl"
+include "rcovery/settings.kdl"
+
+include "rcovery/window-rules.kdl"
+
+include "rcovery/app-bindings.kdl"
+include "rcovery/default-bindings.kdl"
