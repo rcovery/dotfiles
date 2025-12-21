@@ -1,5 +1,6 @@
 #!/bin/bash
 
+
 echo "[-] Backing up ssh config"
 cp ~/.ssh/config .ssh/config
 
