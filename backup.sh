@@ -1,5 +1,8 @@
 #!/bin/bash
 
+echo "[-] Backing up ssh config"
+cp ~/.ssh/config .ssh/config
+
 echo "[-] Backing up ZSHRC"
 cp ~/.zshrc .
 cp -r ~/.config/zsh/prompt.zsh .config/zsh/prompt.zsh
