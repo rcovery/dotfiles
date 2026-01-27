@@ -9,7 +9,7 @@ cp ~/.zshrc .
 cp -r ~/.config/zsh/prompt.zsh .config/zsh/prompt.zsh
 
 echo "[-] Backing up Hyprland"
-cp ~/.config/hypr/* .config/hypr/
+cp -r ~/.config/hypr/* .config/hypr/
 
 # echo "[-] Backing up Waybar"
 # cp ~/.config/waybar/* .config/waybar
@@ -19,3 +19,6 @@ cp -r ~/.config/fish/* .config/fish
 
 echo "[-] Backing up NiriWM"
 cp -r ~/.config/niri/* .config/niri
+
+echo "[-] Backing up KeyD"
+sudo cp /etc/keyd/default.conf etc/keyd/default.conf

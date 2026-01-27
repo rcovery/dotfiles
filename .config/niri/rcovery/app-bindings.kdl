@@ -1,9 +1,11 @@
 binds {
   Mod+V { spawn-sh "walker --width 600 --height 400 -m clipboard"; }
   Mod+Space { spawn-sh "walker --width 600 --height 400"; }
+  Mod+Alt+Space { spawn-sh "ghostty -e omarchy-menu"; }
 
   Mod+Return { spawn "ghostty"; }
-  Mod+E { spawn-sh "nautilus --new-window"; }
+  // Mod+E { spawn-sh "nautilus --new-window"; }
+  Mod+E { spawn-sh "ghostty -e yazi"; }
   Mod+B { spawn "brave"; }
   Mod+O { spawn-sh "obsidian -disable-gpu --enable-wayland-ime"; }
   Mod+A { spawn-sh "brave --app=https://chatgpt.com"; }
@@ -17,7 +19,8 @@ binds {
   Mod+D { spawn-sh "ghostty -e lazydocker"; }
 
   Ctrl+Super+L { spawn-sh "dms ipc call lock lock"; }
-  Ctrl+Super+Space { spawn-sh "dms ipc call wallpaper next; dms ipc call theme dark"; }
+  // Ctrl+Super+Space { spawn-sh "dms ipc call wallpaper next; dms ipc call theme dark"; }
+  Ctrl+Super+Space { spawn-sh "omarchy-theme-bg-next"; }
 
   Print { screenshot; }
   Ctrl+Print { screenshot-screen; }
