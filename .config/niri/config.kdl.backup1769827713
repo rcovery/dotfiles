@@ -13,5 +13,3 @@ include "rcovery/layout.kdl"
 include "rcovery/animations.kdl"
 include "rcovery/monitors.kdl"
 include "rcovery/workspaces.kdl"
-
-include "dms/cursor.kdl"

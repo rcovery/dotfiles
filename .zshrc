@@ -30,3 +30,5 @@ bindkey  "^[[H"   beginning-of-line
 bindkey  "^[[F"   end-of-line
 
 export PATH="$HOME/.emacs.d/bin:$PATH"
+
+. "$HOME/.cargo/env"

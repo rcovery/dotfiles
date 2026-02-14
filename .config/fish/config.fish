@@ -4,8 +4,17 @@ if status is-interactive
 end
 
 function fish_greeting
-    /bin/cat ~/.config/fish/banner
-    echo The time is (set_color yellow)(date +%T)(set_color normal) # and this machine is called $hostname
+    set -l quotes \
+        "All that we see or seem is but a dream within a dream." \
+        "Deep into that darkness peering, long I stood there wondering, fearing..." \
+        "Quoth the Raven 'Nevermore'." \
+        "I became insane, with long intervals of horrible sanity." \
+        "Words have no power to impress the mind without the exquisite horror of their reality."
+
+    set -l random_quote (random choice $quotes)
+
+    echo -e "\n\"$random_quote\""
+    echo -e "  — Edgar Allan Poe\n"
 end
 
 function fish_prompt
@@ -59,6 +68,7 @@ function fish_prompt
     set_color normal # Garante que a entrada de texto seja normal
 end
 
+export PATH="$HOME/.emacs.d/bin:$PATH"
 eval "$(zoxide init fish)"
 eval "$(mise activate fish)"
 
@@ -70,8 +80,8 @@ alias ff="fzf --preview 'bat --style=numbers --color=always {}'"
 alias cd="z"
 alias cat="bat"
 alias n="nvim ."
+alias ai="opencode-jail"
 
 #export ATUIN_NOBIND=true
 #bindkey "^R" atuin-search
-
-export PATH="$HOME/.emacs.d/bin:$PATH"
+export PATH="$HOME/.local/bin:$PATH"
