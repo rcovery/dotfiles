@@ -1,11 +1,12 @@
 binds {
-  Mod+V { spawn-sh "walker --width 600 --height 400 -m clipboard"; }
-  Mod+Space { spawn-sh "walker --width 600 --height 400"; }
-  Mod+Alt+Space { spawn-sh "omarchy-menu"; }
+  Mod+V { spawn-sh "dms ipc call clipboard toggle"; }
+  Mod+Space { spawn-sh "dms ipc call spotlight toggle"; }
+  // Mod+V { spawn-sh "qs -c noctalia-shell ipc call launcher clipboard"; }
+  // Mod+Space { spawn-sh "qs -c noctalia-shell ipc call launcher toggle"; }
 
   Mod+Return { spawn "ghostty"; }
-  // Mod+E { spawn-sh "nautilus --new-window"; }
-  Mod+E { spawn-sh "ghostty -e yazi"; }
+  Mod+E { spawn-sh "nautilus --new-window"; }
+  // Mod+E { spawn-sh "ghostty -e yazi"; }
   Mod+B { spawn "brave"; }
   Mod+O { spawn-sh "obsidian -disable-gpu --enable-wayland-ime"; }
   Mod+A { spawn-sh "brave --app=https://claude.ai/new"; }
@@ -18,8 +19,9 @@ binds {
   Mod+T { spawn-sh "ghostty -e dgop"; }
   Mod+D { spawn-sh "ghostty -e lazydocker"; }
 
-  Ctrl+Super+L { spawn-sh "dms ipc call lock lock"; }
-  Ctrl+Super+Space { spawn-sh "dms ipc call wallpaper next; dms ipc call theme dark"; }
+  Ctrl+Mod+Backspace { spawn-sh "dms ipc call lock lock"; }
+  // Ctrl+Super+Space { spawn-sh "dms ipc call wallpaper next; dms ipc call theme dark"; }
+  // Ctrl+Mod+Backspace { spawn-sh "qs -c noctalia-shell ipc call lockScreen lock"; }
   // Ctrl+Super+Space { spawn-sh "omarchy-theme-bg-next"; }
 
   Print { screenshot; }

@@ -1,0 +1,10 @@
+// DMS Window Rules - Managed by DankMaterialShell
+// Do not edit manually - changes may be overwritten
+
+// @id=wr_1777914066981337371 @name=org.gnome.Calculator
+window-rule {
+    match app-id="^org.gnome.Calculator$"
+    open-floating true
+    default-column-width { fixed 400; }
+    default-window-height { fixed 600; }
+}
